@@ -50,7 +50,7 @@ top: 480px;
 }
 @media only screen and (min-width: 600px) {.signin{
     left: 350px;
-top: 480px;
+    top: 480px;
 }
 .login{
     left: 250px;
@@ -123,7 +123,7 @@ nav ul{
 }
 .wrap li {
      list-style: none;
-     margin-right: 60px;
+     margin-right: 30px;
 }
 
 .wrap li a {
@@ -136,7 +136,7 @@ nav ul{
 }
 .wrap li a p {
     font-size: 20px;
-    line-height: 1px;
+    line-height: 0px;
     font-family:"Poppins",sans-serif;
     color: #021718;
     text-decoration: none;
