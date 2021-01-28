@@ -524,6 +524,7 @@ section .section-title {
     color: #6d5f5f;
     }
 }
+
 @media only screen and (min-width :768px){
     .blog-dir p{
         position: absolute;
@@ -596,4 +597,34 @@ section .section-title {
        margin-top: 50px;
        margin-left: 370px;
     }
+}
+.h6{
+    padding:60px;
+}
+#demo{
+    display: none;
+}
+
+#bars {
+    display: none;
+    border: none;
+    margin-left: 270px;
+ }
+ #list-res {
+    display: none;
+ }
+ @media only screen and (max-width:600px){
+     #bars{
+         display: block;
+     }
+ }
+#bars ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#bars p{
+    color: #021718;
+    text-decoration: none;
+    padding: 10px;
 }

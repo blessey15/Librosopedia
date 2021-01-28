@@ -25,7 +25,7 @@
         <p> <input type="radio" id="get" name="get" value="get">I'm here to get books</p>
         <p> <input type="radio" id="con" name="con" value="con">I'm here to contribute</p>
     </div>
-    <div class="btn"><button type="button" class="btn btn-secondary" onclick="jFunction">Join</button></div>
+    <div class="btn"><button type="button" class="btn btn-secondary" onclick=" jFunction() ">Join</button></div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="main.js"></script>
@@ -33,12 +33,26 @@
 </body>
 <script>
   function jFunction(){
-    if(document.getElementById('get').checked){
-           document.write("Welcome");
+    if(document.getElementById("get").checked==true){
+        //location.replace("index.html")
+        //document.body.style.backgroundColor = "#6d5f5f";
+        document.write("<h2 style='padding:20px;'>Welcome ,You Succesfully Joined Librosopedia community.<br> <br><button style='background-color:#6d5f5f;' class='btn btn-secondary' onclick='loc()'>Get Started</button>")
+    }else if(document.getElementById("con").checked==true){
+        //document.body.style.backgroundColor = "#6d5f5f";
+        document.write("<h2 style='padding:20px;'>Welcome ,You Succesfully Joined Librosopedia community.<br> <br><button style='background-color:#6d5f5f;' class='btn btn-secondary' onclick='loc()'>Get Started</button>")
+    }else{
+        window.alert("Select one option to join");
     }
+}
+function loc(){
+    location.replace("index.html")
 }
 </script>
 <style>
+    .h2{
+        color: rgb(1, 44, 1);
+        padding: 30px;
+    }
     .logo img{
         max-width: 100%;
         width: 90px;
@@ -51,6 +65,9 @@
     }
     .logo{
         text-align: right;
+    }
+    .logo p{
+        padding: 20px;
     }
     .h1-cont{
         text-align: center;
@@ -68,6 +85,24 @@
     }
     input{
         margin: 10px;
+    }
+    @media only screen and (min-width:920px){
+        .btn{
+        align-items: center;
+        margin-left: 300px;
+    }
+    }
+    @media only screen and (max-width:600px){
+        .btn{
+        align-items: center;
+        margin-left: 80px;
+    }
+    }
+    @media only screen and (max-width:760px){
+        .btn{
+        align-items: center;
+        margin-left: 200px;
+    }
     }
 </style>
 </html>
